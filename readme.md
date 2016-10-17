@@ -37,7 +37,7 @@ To `Context` you pass the data-object using the `target` prop. The `Binding`
 components need the `name` prop, which property on the data-object holds the
 value they should manage.
 
-A component is capable of handling the binding when it tages a `value` prop and
+A component is capable of handling the binding when it takes a `value` prop and
 a `onChange` prop. The `value` prop holds the value of the property of the
 data-object. The `onChange` prop is a function that must be called with the new
 value as first argument as soon as the value was changed in the component.
@@ -71,9 +71,8 @@ was changed, with the new value as first argument
 then you get an array of errors on this field. It's zero-length if there aren't any.
 
 ### Validator
-A validator is any object that implements the following interface:
-- validate(data: object) (Error[]): Validates the data provided and returns an
-array of errors found. Empty if no errors where found.
+A validator is any function that takes an object as first parameter and returns
+an array of zero or more Errors.
 
 ### Error
 Errors are returned by a Validator's `validate` function. The are read-only objects.

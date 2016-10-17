@@ -25,7 +25,7 @@ class Context extends react.Component{
 	}
 	getErrors(key){
 		var c = this.rootContext;
-		if(!c.errors) c.errors = c.props.validator?c.props.validator.validate(c.props.target):[];
+		if(!c.errors) c.errors = c.props.validator?c.props.validator(c.props.target):[];
 		key = this.fullKey+key;
 		return c.errors.filter(function(error){return error.fields.indexOf(key)>=0})
 	}
