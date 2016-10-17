@@ -1,0 +1,14 @@
+{
+  "name": "react-bicon",
+  "version": "1.0.0",
+  "description": "A data-binding library for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data-binding"
+  ],
+  "author": "Patrik Stutz",
+  "license": "MPL-2.0"
+}
