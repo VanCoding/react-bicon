@@ -1,4 +1,5 @@
 var react = require("react");
+var PropTypes = require("prop-types");
 class Context extends react.Component{
 	constructor(props,context){
 		super(props,context);
@@ -34,10 +35,10 @@ class Context extends react.Component{
 	}
 }
 Context.childContextTypes = {
-	context:react.PropTypes.object
+	context: PropTypes.object
 }
 Context.contextTypes = {
-	context:react.PropTypes.object
+	context: PropTypes.object
 }
 class Binding extends react.Component{
 	render(){
@@ -54,7 +55,7 @@ class Binding extends react.Component{
 	}
 }
 Binding.contextTypes = {
-	context:react.PropTypes.object
+	context: PropTypes.object
 }
 exports.Binding = Binding;
 exports.Context = Context;
